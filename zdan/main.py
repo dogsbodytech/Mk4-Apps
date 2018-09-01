@@ -14,7 +14,7 @@ ugfx.clear()
 
 ugfx.text(5, 5, "Loading awesomeness:", ugfx.BLACK)
 try:
-    image = http.get("http://www.kinyu-z.net/data/wallpapers/170/1298212.jpg").raise_for_status().content
+    image = http.get("http://dodskypict.com/D/Abstract-Rainbow-Wallpaper-On-Wallpaper-Hd-16-240x320.jpg").raise_for_status().content
     ugfx.display_image(0,0,bytearray(image))
 except:
     ugfx.clear()
