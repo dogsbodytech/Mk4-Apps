@@ -1,4 +1,4 @@
-"""Version 3 A big "thank you" to all our Sponsors who made this year's badge possible!"""
+"""Version 4 A big "thank you" to all our Sponsors who made this year's badge possible!"""
 
 ___name___         = "Robert and his flying trapeze"
 ___license___      = "MIT"
