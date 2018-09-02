@@ -10,7 +10,7 @@ ___launchable___   = False
 import ugfx
 from homescreen import *
 import time
-from machine import Neopixel
+from machine import Neopix
 
 # Padding for name
 intro_height = 60 # 30
