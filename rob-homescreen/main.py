@@ -1,4 +1,4 @@
-"""A big wibble "thank you" to all our Sponsors who made this year's badge possible!"""
+"""A big foobar wibble "thank you" to all our Sponsors who made this year's badge possible!"""
 
 ___name___         = "Robert and his flying trapeze"
 ___license___      = "MIT"
