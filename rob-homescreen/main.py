@@ -1,4 +1,4 @@
-"""Version 4 A big "thank you" to all our Sponsors who made this year's badge possible!"""
+"""Version 5 A big "thank you" to all our Sponsors who made this year's badge possible!"""
 
 ___name___         = "Robert and his flying trapeze"
 ___license___      = "MIT"
@@ -79,7 +79,7 @@ n = Neopix()
 while True:
     text = "";
     #value_wifi_strength = wifi_strength()
-    if neopixval > 9999999:
+    if neopixval > 16777215:
         neopixval = 0
     neopixval += 25 
     value_battery = battery()
@@ -88,6 +88,6 @@ while True:
     if value_battery:
         text += "Battery: %s%%" % int(value_battery)
     status.text(text)
-    n.display(["{0:#0{1}x}".format(neopixval,8),"{0:#0{1}x}".format(neopixval,8)])
+    n.display([neopixval,neopixval)])
     sleep_or_exit(0.5)
 
