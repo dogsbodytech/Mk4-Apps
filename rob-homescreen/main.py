@@ -10,6 +10,7 @@ ___launchable___   = False
 import ugfx
 from homescreen import *
 import time
+from machine import Neopixel
 
 # Padding for name
 intro_height = 60 # 30
@@ -70,14 +71,21 @@ ugfx.set_default_font(ugfx.FONT_SMALL)
 status = ugfx.Label(0, ugfx.height() - info_height * 2 - status_height, ugfx.width(), status_height, "", justification=ugfx.Label.CENTER)
 
 # update loop
+
+neopixval = 0
+
 while True:
     text = "";
-    value_wifi_strength = wifi_strength()
+    #value_wifi_strength = wifi_strength()
+    if neopixval > 9999999:
+	neopixval = 0
+    neopixval += 25 
     value_battery = battery()
-    if value_wifi_strength:
-        text += "Wi-Fi: %s%%, " % int(value_wifi_strength)
+    #if value_wifi_strength:
+    #    text += "Wi-Fi: %s%%, " % int(value_wifi_strength)
     if value_battery:
         text += "Battery: %s%%" % int(value_battery)
     status.text(text)
+    n = Neopixel(["{0:#0{1}x}".format(neopixval,8),"{0:#0{1}x}".format(neopixval,8)])
     sleep_or_exit(0.5)
 
