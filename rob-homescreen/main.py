@@ -80,7 +80,7 @@ while True:
     text = "";
     #value_wifi_strength = wifi_strength()
     if neopixval > 9999999:
-	neopixval = 0
+        neopixval = 0
     neopixval += 25 
     value_battery = battery()
     #if value_wifi_strength:
