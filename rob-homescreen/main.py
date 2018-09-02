@@ -1,4 +1,4 @@
-"""A big foobar wibble "thank you" to all our Sponsors who made this year's badge possible!"""
+"""Version 3 A big "thank you" to all our Sponsors who made this year's badge possible!"""
 
 ___name___         = "Robert and his flying trapeze"
 ___license___      = "MIT"
@@ -74,6 +74,8 @@ status = ugfx.Label(0, ugfx.height() - info_height * 2 - status_height, ugfx.wid
 
 neopixval = 0
 
+n = Neopix()
+
 while True:
     text = "";
     #value_wifi_strength = wifi_strength()
@@ -86,6 +88,6 @@ while True:
     if value_battery:
         text += "Battery: %s%%" % int(value_battery)
     status.text(text)
-    n = Neopixel(["{0:#0{1}x}".format(neopixval,8),"{0:#0{1}x}".format(neopixval,8)])
+    n.display(["{0:#0{1}x}".format(neopixval,8),"{0:#0{1}x}".format(neopixval,8)])
     sleep_or_exit(0.5)
 
