@@ -13,7 +13,7 @@ import time
 
 # Padding for name
 intro_height = 60 # 30
-intro_text = "Hi! My name is (what?) \nMy name is (who?) \n My name is "
+intro_text = "Hi! My name is "
 name_height = 70 # 60
 status_height = 15 #20
 info_height = 15 # 30
@@ -26,11 +26,11 @@ max_name = 8
 
 # Background stuff
 init()
-ugfx.clear(ugfx.html_color(0x800080))
+ugfx.clear(ugfx.html_color(0x073763))
 
 # Colour stuff
 style = ugfx.Style()
-style.set_enabled([ugfx.WHITE, ugfx.html_color(0x800080), ugfx.html_color(0x800080), ugfx.html_color(0x800080)])
+style.set_enabled([ugfx.WHITE, ugfx.html_color(0x073763), ugfx.html_color(0x073763), ugfx.html_color(0x073763)])
 style.set_background(ugfx.html_color(0x073763))
 ugfx.set_default_style(style)
 
